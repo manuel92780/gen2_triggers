@@ -1,0 +1,13 @@
+executable = jobs.sh
+arguments = $(DOM) $(dom_time) $(npes) $(event_time) $(ndoms)
+
+universe     = vanilla
+request_memory = 3GB
+request_disk = 100MB
+request_cpus = 1
+
+log = /home/msilva/gen-2-triggers/logfiles/job_$(DOM)_$(dom_time)_$(npes)_$(event_time)_$(ndoms).log
+output = /home/msilva/gen-2-triggers/logfiles/job_$(DOM)_$(dom_time)_$(npes)_$(event_time)_$(ndoms).out
+error = /home/msilva/gen-2-triggers/logfiles/job_$(DOM)_$(dom_time)_$(npes)_$(event_time)_$(ndoms).err
+
+Queue
